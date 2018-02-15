@@ -1,7 +1,7 @@
 'use strict';
 
 var MongoClient = require('mongodb').MongoClient;
-var client = require('socket.io').listen(3000).sockets;
+var client = require('socket.io').listen(process.env.PORT || 3000).sockets;
 var url = "mongodb://admin:admin@ds012058.mlab.com:12058/livechatdatabase";
 
 var os = require('os');
@@ -12,7 +12,7 @@ var socketIO = require('socket.io');
 var fileServer = new(nodeStatic.Server)();
 var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
-}).listen(7777);
+}).listen(process.env.PORT || 5000);
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
