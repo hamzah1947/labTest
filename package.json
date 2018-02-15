@@ -2,6 +2,9 @@
   "name": "labtest",
   "version": "1.0.0",
   "description": "nodeTestproject",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "server.js",
   "scripts": {
     "test": "node server.js"
