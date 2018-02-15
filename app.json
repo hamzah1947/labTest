@@ -2,5 +2,7 @@
   "name": "LabTest",
   "description": "A barebones Node.js app using Express 4",
   "repository": "https://github.com/hamzah1947/labTest",
-  "keywords": ["node", "express", "heroku"]
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
 }
